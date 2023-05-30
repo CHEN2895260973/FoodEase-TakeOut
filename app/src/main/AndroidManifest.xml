@@ -17,6 +17,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name="com.example.foodease.OrderFileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodease.OrderListActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.foodease.OrderActivity"
             android:exported="false" />
         <activity

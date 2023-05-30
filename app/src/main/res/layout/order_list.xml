@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/type_gray"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar" />
+    <ListView
+        android:id="@+id/lv_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/type_gray" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <TextView
+            android:id="@+id/tv_shopname1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="店铺：快乐柠檬"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_shop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/tv_shopname1"
+            android:text="大满贯珍珠奶茶（大杯)  x1"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_money1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="￥19\n共1件"
+            android:layout_marginTop="42dp"
+            android:textColor="@color/price_red"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shop1"
+            android:padding="10dp"
+            android:text="下单时间：2023-05-26"
+            android:textColor="@color/color_gray"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_zt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/tv_time1"
+            android:layout_alignParentRight="true"
+            android:text="状态：已送达"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/tv_detail1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/tv_zt1"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/payment_bg_selector"
+            android:text="查看详情"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/tv_detail1"
+            android:background="@color/color_gray" />
+        <TextView
+            android:id="@+id/tv_shopname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_line1"
+            android:padding="10dp"
+            android:text="店铺：吃货补给"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_shop2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/tv_shopname2"
+            android:text="提拉米苏盒子  x1\n蘸酱麻薯  x1\n提拉米苏盒子  x1"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_money2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="￥48\n共3件"
+            android:layout_marginTop="265dp"
+            android:textColor="@color/price_red"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shop2"
+            android:padding="10dp"
+            android:text="下单时间：2023-05-15"
+            android:textColor="@color/color_gray"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_zt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/tv_time2"
+            android:layout_alignParentRight="true"
+            android:text="状态：已完成"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/tv_detail2"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/tv_zt2"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/payment_bg_selector"
+            android:gravity="center"
+            android:text="查看详情"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_line2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/tv_detail2"
+            android:background="@color/color_gray" />
+        <TextView
+            android:id="@+id/tv_shopname3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_line2"
+            android:padding="10dp"
+            android:text="店铺：茶百道"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_shop3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/tv_shopname3"
+            android:text="杨枝甘露  x1\n茉莉奶绿  x1"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_money3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="￥48\n共2件"
+            android:layout_marginTop="500dp"
+            android:textColor="@color/price_red"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shop3"
+            android:padding="10dp"
+            android:text="下单时间：2023-04-05"
+            android:textColor="@color/color_gray"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_zt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/tv_time3"
+            android:layout_alignParentRight="true"
+            android:text="状态：已完成"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/tv_detail3"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/tv_zt3"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/payment_bg_selector"
+            android:gravity="center"
+            android:text="查看详情"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_line3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/tv_detail3"
+            android:background="@color/color_gray" />
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:padding="10dp"
+            android:layout_below="@id/tv_line3"
+            android:text="仅展示最近一年的订单"
+            android:textColor="@color/color_gray"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>
