@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.foodease">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -23,16 +22,15 @@
             android:name="com.example.foodease.OrderListActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.foodease.OrderActivity"
+            android:name=".OrderActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.foodease.FoodActivity"
+            android:name=".FoodActivity"
             android:theme="@style/Theme.ActivityDialogStyle" />
         <activity
-            android:name="com.example.foodease.ShopDetailActivity"
+            android:name=".ShopDetailActivity"
             android:exported="false" />
-        <activity
-            android:name="com.example.foodease.ShopActivity"
+        <activity android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,7 +39,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.foodease.MainActivity"
+            android:name=".ShopActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".PersonActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
             android:exported="false" />
     </application>
 

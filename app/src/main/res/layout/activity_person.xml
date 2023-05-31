@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PersonActivity"
+    android:orientation="vertical"
+    android:background="#F0F3F6">
+    <RelativeLayout
+        android:id="@+id/rl_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DEFFED">
+
+        <TextView
+            android:id="@+id/tv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/ll_anchor_left"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/ll_anchor_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="3dp"
+                android:src="@drawable/jienigui"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_below="@id/rl_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#9FEDF3F6"
+        android:gravity="center"
+        android:layout_below="@id/line1"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/line2"
+
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="用户名"
+            android:textColor="@color/foodEase_color"/>
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="星星泡饭"
+            android:textColor="@color/foodEase_color"/>
+        <ImageButton
+            android:id="@+id/btn_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/person_item"
+            android:onClick="showInputDialog"
+            tools:ignore="DuplicateIds,UsingOnClickInXml"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_below="@id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#9FEDF3F6"
+        android:gravity="center"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line5"
+        android:layout_below="@id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="性别"
+            android:textColor="@color/foodEase_color"/>
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="女"
+            android:textColor="@color/foodEase_color"/>
+        <ImageButton
+            android:id="@+id/btn_sex"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/person_item"
+            android:onClick="showInputDialog"
+            tools:ignore="DuplicateIds,UsingOnClickInXml"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line6"
+        android:layout_below="@id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#9FEDF3F6"
+        android:gravity="center"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line7"
+        android:layout_below="@id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="生日"
+            android:textColor="@color/foodEase_color"/>
+
+        <TextView
+            android:id="@+id/tv_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="1994/01/12"
+            android:textColor="@color/foodEase_color"/>
+        <ImageButton
+            android:id="@+id/btn_birth"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/person_item"
+            android:onClick="showInputDialog"
+            tools:ignore="DuplicateIds,UsingOnClickInXml"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line8"
+        android:layout_below="@id/line7"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#9FEDF3F6"
+        android:gravity="center"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line9"
+        android:layout_below="@id/line8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="手机号"
+            android:textColor="@color/foodEase_color" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="1122334455"
+            android:textColor="@color/foodEase_color" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_phone"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/person_item"
+            android:onClick="showInputDialog"
+            tools:ignore="DuplicateIds,UsingOnClickInXml"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line10"
+        android:layout_below="@id/line9"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#9FEDF3F6"
+        android:gravity="center"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line11"
+        android:layout_below="@id/line10"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/password_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="修改密码"
+            android:textColor="@color/foodEase_color"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_password"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/person_item"
+            android:onClick="showInputDialog"
+            tools:ignore="DuplicateIds,UsingOnClickInXml"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line12"
+        android:layout_below="@id/line11"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#9FEDF3F6"
+        android:gravity="center"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line13"
+        android:layout_below="@id/line12"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="地址管理"
+            android:textColor="@color/foodEase_color"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_place"
+            android:backgroundTint="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/person_item"
+            android:onClick="showInputDialog"
+            tools:ignore="DuplicateIds,UsingOnClickInXml" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/exit_layout"
+        android:layout_below="@id/line13"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@color/foodEase_color"
+            android:text="退出登录"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <include layout="@layout/navigation_layout" />
+    </LinearLayout>
+
+
+</RelativeLayout>

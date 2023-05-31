@@ -1,6 +1,7 @@
 package com.example.foodease;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -10,6 +11,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -50,6 +53,8 @@ public class ShopActivity extends AppCompatActivity {
     private ShopListView slv_list;             //列表控件
     private ShopAdapter adapter;
 
+    private RadioGroup radioGroup;          // 底部导航栏
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,11 +62,40 @@ public class ShopActivity extends AppCompatActivity {
         mHandler=new MHandler();
         initData(); //访问网络，获取数据并将数据显示在界面上
         init(); //初始化界面控件
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId) {
+                    case R.id.rb_home:
+                        startActivity(new Intent(ShopActivity.this, ShopActivity.class));
+                        finish();
+                        break;
+                    case R.id.rb_order:
+                        // 切换到发现Fragment或Activity
+//                        startActivity(new Intent(ShopActivity.this, ShopActivity.class));
+//                        finish();
+                        break;
+                    case R.id.rb_me:
+                        // 切换到个人中心Fragment或Activity
+                        startActivity(new Intent(ShopActivity.this, PersonActivity.class));
+                        finish();
+                        break;
+                }
+            }
+        });
     }
     /**
      * 初始化界面控件
      */
     private void init(){
+
+//        菜单栏的点击事件
+        radioGroup=findViewById(R.id.rg_tab);
+        radioGroup.check(R.id.rb_home);
+
+
+
         slv_list= findViewById(R.id.slv_list);
         adapter = new ShopAdapter(this);
         slv_list.setAdapter(adapter);
