@@ -60,10 +60,9 @@ public class PersonActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //关闭当前页面
                 finish();
-//
+                moveTaskToBack(true);
 //                Intent intent = new Intent(PersonActivity.this, MainActivity.class);
 //                startActivity(intent);
-                moveTaskToBack(true);
             }
         });
 

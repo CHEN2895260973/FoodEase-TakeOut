@@ -52,6 +52,7 @@ public class OrderListActivity extends AppCompatActivity implements View.OnClick
             public void onClick(View v) {
                 Intent intent1 = new Intent(OrderListActivity.this,ShopActivity.class);
                 startActivity(intent1);
+                finish();
             }
         });
         tv_detail1.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +60,7 @@ public class OrderListActivity extends AppCompatActivity implements View.OnClick
             public void onClick(View v) {
                 Intent intent2 = new Intent(OrderListActivity.this,OrderFileActivity.class);
                 startActivity(intent2);
+                finish();
             }
         });
     }
@@ -80,11 +82,13 @@ public class OrderListActivity extends AppCompatActivity implements View.OnClick
             case R.id.tv_back:               //返回按钮的点击事件
                 Intent intent = new Intent(OrderListActivity.this,ShopActivity.class);
                 startActivity(intent);
+                finish();
                 break;
             case R.id.tv_detail1: //去结算按钮的点击事件
                 //跳转到订单界面
                     Intent intent3 = new Intent(OrderListActivity.this,OrderFileActivity.class);
                     startActivity(intent3);
+                    finish();
                 break;
         }
     }
