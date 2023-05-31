@@ -42,9 +42,8 @@ public class PersonActivity extends AppCompatActivity {
 //                        finish();
                         break;
                     case R.id.rb_order:
-                        // 切换到发现Fragment或Activity
-//                        startActivity(new Intent(PersonActivity.this, ShopActivity.class));
-//                        finish();
+                        startActivity(new Intent(PersonActivity.this, OrderListActivity.class));
+                        finish();
                         break;
                     case R.id.rb_me:
                         // 切换到个人中心Fragment或Activity

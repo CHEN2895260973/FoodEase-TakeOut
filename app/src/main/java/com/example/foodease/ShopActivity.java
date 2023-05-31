@@ -73,8 +73,8 @@ public class ShopActivity extends AppCompatActivity {
                         break;
                     case R.id.rb_order:
                         // 切换到发现Fragment或Activity
-//                        startActivity(new Intent(ShopActivity.this, ShopActivity.class));
-//                        finish();
+                        startActivity(new Intent(ShopActivity.this, OrderListActivity.class));
+                        finish();
                         break;
                     case R.id.rb_me:
                         // 切换到个人中心Fragment或Activity

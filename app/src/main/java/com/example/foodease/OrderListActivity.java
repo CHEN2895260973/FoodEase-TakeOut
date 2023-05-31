@@ -50,14 +50,15 @@ public class OrderListActivity extends AppCompatActivity implements View.OnClick
         tv_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent1 = new Intent(OrderListActivity.this,ShopActivity.class);
+                startActivity(intent1);
             }
         });
         tv_detail1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OrderListActivity.this,OrderFileActivity.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(OrderListActivity.this,OrderFileActivity.class);
+                startActivity(intent2);
             }
         });
     }
@@ -77,12 +78,13 @@ public class OrderListActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tv_back:               //返回按钮的点击事件
-                finish();
+                Intent intent = new Intent(OrderListActivity.this,ShopActivity.class);
+                startActivity(intent);
                 break;
             case R.id.tv_detail1: //去结算按钮的点击事件
                 //跳转到订单界面
-                    Intent intent = new Intent(OrderListActivity.this,OrderFileActivity.class);
-                    startActivity(intent);
+                    Intent intent3 = new Intent(OrderListActivity.this,OrderFileActivity.class);
+                    startActivity(intent3);
                 break;
         }
     }
