@@ -6,4 +6,11 @@
     <string name="title_notifications">我的</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirm">确认</string>
+    <string name="re_back">返回</string>
+    <string name="phone_input">请输入手机号码</string>
+    <string name="phone">手机号码:</string>
+    <string name="password_input">请再输入密码</string>
+    <string name="password_again">确认密码:</string>
+    <string name="username">用 户 名:</string>
 </resources>

@@ -60,7 +60,6 @@ public class OrderListActivity extends AppCompatActivity implements View.OnClick
             public void onClick(View v) {
                 Intent intent2 = new Intent(OrderListActivity.this,OrderFileActivity.class);
                 startActivity(intent2);
-                finish();
             }
         });
     }
