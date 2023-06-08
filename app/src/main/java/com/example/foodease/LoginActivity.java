@@ -31,8 +31,8 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (username.getText().toString().trim().equals("foodease")
-                        && password.getText().toString().equals("123456")) {
+                if (username.getText().toString().trim().equals("gdufs")
+                        && password.getText().toString().equals("welcome")) {
 //                    tvMessage.setText("登录成功！");
 //                    Intent intent = new Intent(LoginActivity.this, ShopActivity.class);
 //                    startActivity(intent);
